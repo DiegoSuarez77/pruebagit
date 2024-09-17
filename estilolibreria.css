@@ -1,0 +1,394 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 235, 226);
+}
+
+.portada {
+    background-image: url(imagenes/portada.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 350px;
+    margin-bottom: 80px;
+    align-items: center;
+    align-content: center;
+}
+
+#creando {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold; 
+}
+
+#vivir {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    font-family:'Courier New';
+    font-style: italic;
+}
+
+.encabezado1 {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.buscador {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    border-radius: 20px;
+    border: 2px solid rgb(175, 145, 100);
+}
+
+.buscador input::placeholder {
+    color: rgb(175, 145, 100);
+}
+
+.iconos {
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-content: flex-end;
+    margin: 10px;
+    }
+
+.encabezado1 .tunel {
+    font-family: cursive;
+    color: brown;
+    font-size: 50px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;
+    justify-content: center;
+}
+
+.buscador{
+    margin: 10px;
+}
+
+i{
+    margin: 3px;
+    padding: 3px;
+    color: rgba(12, 32, 58, 0.884);
+    font-size: 20px;;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(175, 145, 100);
+    margin: 0px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul li {
+    margin: 0px 80px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(254, 250, 242);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carrusel {
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: scroll;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 420px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item-1 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-1 p {
+    margin: 3px;
+}
+.item-2 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-2 p {
+    margin: 3px;
+}
+.item-3 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-3 p {
+    margin: 3px;
+}
+.item-4 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-4 p {
+    margin: 3px;
+}
+.item-5 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-5 p {
+    margin: 3px;
+}
+.carrusel2 {
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: scroll;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 420px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item-6 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-7 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-8 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-9 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.item-10 {
+    flex: 1 0 auto;
+    margin: 20px 30px;
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;  
+}
+
+.boton1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 35, 35);
+    border-radius: 3px;
+    border-bottom:none;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    width: 65px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.boton1:hover {
+    background-color:rgb(252, 91, 42);
+    transform: scale(1.05); 
+}
+
+.titulolibro {
+    font-weight: bold;
+}
+.precio {
+    color: rgb(129, 88, 26);
+    margin-right: 10px;
+}
+
+/* CONOCENOS */
+
+.conocenos {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+} 
+.portada2{
+    background-image: url(imagenes/libreria.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 640px;
+    height: 440px;
+    background-position: right center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.texto-conocenos {
+    width: 40%;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0 px;
+    margin-right: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+h2 {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown; 
+ }
+ .texto-conocenos #sinespacio {
+    margin-left: 0px;
+ }
+ h4 {
+     text-align: center;
+     color: brown;
+ }
+
+/*FOOTER*/
+
+ footer{
+    background-color:rgb(175, 145, 100);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+    align-items: center;
+ }
+
+ hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+ h3 {
+    color: rgb(255, 255, 255);
+ }
+
+ .piedepagina{
+    display: flex;
+    margin-bottom: 20px;
+ }
+
+ .tunel2{
+    width: 33%;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+ }
+
+ .tunel2 p {
+    margin-bottom: 10px;
+ }
+
+ .tunel2 .rrss i{
+    color: rgba(12, 32, 58, 0.884);
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+ }
+
+ .tunel2 .rrss {
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .informacion {
+    width: 33%;
+ }
+
+ .informacion ul { /* Si hay que especificar el ul dentro del contenedor informacion para bloquear el display */
+    display: block;
+    text-align: left;
+ }
+
+ .informacion ul li {
+    margin: 15px;
+ }
+
+ .suscribete {
+    width: 33%;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+ }
+
+.derechos{
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.boton2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(252, 131, 61);
+    border: 2px solid rgb(255, 202, 129);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton2:hover {
+    background-color:rgb(248, 115, 62);
+    transform: scale(1.05); 
+}
+
+.boton2 {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#input2 {
+    border-radius: 0px;
+    height: 30px;
+    width: 80%;
+    margin-top: 10px;
+}
